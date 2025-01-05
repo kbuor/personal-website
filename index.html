@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trung Nguyên Kbuôr</title>
+  
+  <!-- Google Font: Orbitron (Technology Style) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- AOS CSS (Scroll Animation) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header (Navigation Bar) with icons -->
+  <header id="header" class="bg-transparent text-white p-6  w-full top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Navigation with icons -->
+        <nav class="flex items-center space-x-6 ml-auto">
+          <a href="https://www.linkedin.com/in/trungnguyenkbuor/" target="_blank" class="text-lg hover:text-blue-600 transition duration-300">
+              <i class="fab fa-linkedin fa-lg"></i> <!-- LinkedIn Icon -->
+          </a>
+          <a href="https://github.com/kbuor" target="_blank" class="text-lg hover:text-green-400 transition duration-300">
+              <i class="fab fa-github fa-lg"></i> <!-- GitHub Icon -->
+          </a>
+          <a href="https://www.youtube.com/@trungnguyenkbuor" target="_blank" class="text-lg hover:text-red-500 transition duration-300">
+            <i class="fab fa-youtube fa-lg"></i> <!-- Youtube Icon -->
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="flex items-center justify-center h-screen bg-cover bg-center relative" style="background-image: url('images/hero-image.png');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto text-center text-white relative z-10">
+      <h2 class="text-6xl font-semibold text-animate" data-aos="fade-up">HI, I'M KBUÔR</h2>
+      <p class="text-2xl mt-4" data-aos="fade-up" data-aos-delay="300">
+        <span class="typing"></span>
+      </p>
+      <a href="#contact" class="mt-6 inline-block bg-yellow-500 px-8 py-4 text-xl font-semibold rounded-full hover:bg-yellow-400 transition duration-300" data-aos="fade-up" data-aos-delay="500">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Who am i?</h2>
+      <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0">
+        <img src="images/your-photo.jpg" alt="Trung Nguyên" class="rounded-full w-64 h-64 border-4 border-blue-500 shadow-lg" data-aos="slide-right">
+        <div class="md:ml-8 mt-6 md:mt-0 max-w-2xl text-lg text-gray-700 text-justify" data-aos="slide-left">
+          <p class="mt-4">I am a Solution Architect with expertise designing and deploying cloud-native and containerization solutions, focus on building efficient, secure cloud-native infrastructures, especially in containerization environments and across any platforms to help organizations optimize their infrastructure and deploy modern applications, ensuring scalability, high performance, and supporting their digital transformation journey.</p>
+          <p class="mt-4">Additionally, I’m passionate about sharing my knowledge by teaching and simplifying complex technologies, making them more accessible for others to understand and apply.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-100" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12">MY PORTFOLIO</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="flip-left" data-aos-delay="100">
+          <img src="images/vmware.png" alt="Cloud Services" class="w-24 h-50 mx-auto mb-6">
+          <h3 class="text-2xl font-semibold mb-4">VMWARE BY BROADCOM</h3>
+          <p class="text-lg text-gray-600">Specialize in leveraging VMware's VCF to build infrastructures that drive digital transformation across cloud-native environments</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="flip-left" data-aos-delay="300">
+          <img src="images/aws.png" alt="Consulting" class="w-24 h-50 mx-auto mb-6">
+          <h3 class="text-2xl font-semibold mb-4">AMAZON WEB SERVICES</h3>
+          <p class="text-lg text-gray-600">Specialize in delivering high-performance, secure, and cost-effective cloud infrastructures that drive innovation and business success</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="flip-left" data-aos-delay="500">
+          <img src="images/kubernetes.png" alt="Training" class="w-24 h-50 mx-auto mb-6">
+          <h3 class="text-2xl font-semibold mb-4">KUBERNETES</h3>
+          <p class="text-lg text-gray-600">Specialize in optimizing container orchestration and driving the success of microservices architectures for enterprise-level solutions</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="flip-left" data-aos-delay="100">
+          <img src="images/veeam.png" alt="Cloud Services" class="w-24 h-50 mx-auto mb-6">
+          <h3 class="text-2xl font-semibold mb-4">VEEAM DATA PROTECTION</h3>
+          <p class="text-lg text-gray-600">Specialize in optimizing data protection strategies and delivering high-performance, scalable backup solutions for enterprise infrastructures</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="flip-left" data-aos-delay="300">
+          <img src="images/cncf.png" alt="Consulting" class="w-24 h-50 mx-auto mb-6">
+          <h3 class="text-2xl font-semibold mb-4">CLOUD NATIVE COMPUTING</h3>
+          <p class="text-lg text-gray-600">Specialize in architecting and deploying cloud-native applications using CNCF projects to drive scalability and innovation.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="flip-left" data-aos-delay="500">
+          <img src="images/openstack.png" alt="Training" class="w-24 h-50 mx-auto mb-6">
+          <h3 class="text-2xl font-semibold mb-4">OPENSTACK</h3>
+          <p class="text-lg text-gray-600">Specialize in designing private cloud infrastructures, utilizing OpenStack's robust orchestration capabilities to drive scalability and cost efficiency.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12">Certifications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images/vcap.png" alt="VMWARE - VCAP DCV" class="w-full h-56 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-semibold">VMWARE - VCAP Design</h3>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images/sap.png" alt="AWS - SAP SAA SOA" class="w-full h-56 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-semibold">AWS - SAP SAA SOA</h3>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="500">
+          <img src="images/cka.png" alt="CNCF - CKA" class="w-full h-56 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-semibold">CNCF - CKA</h3>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images/vmce.png" alt="VEEAM - VMCE" class="w-full h-56 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-semibold">VEEAM - VMCE</h3>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images/lpic2.png" alt="LPI - LPIC 2" class="w-full h-56 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-semibold">LPI - LPIC 2</h3>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="500">
+          <img src="images/coa.png" alt="OPENSTACK - COA" class="w-full h-56 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-semibold">OPENSTACK - COA</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+      <form action="mailto:your-email@example.com" method="POST" class="w-full max-w-lg mx-auto">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-4 mb-4 border rounded-lg" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-4 mb-4 border rounded-lg" required>
+        <textarea name="message" placeholder="Your Message" class="w-full p-4 mb-4 border rounded-lg" rows="4" required></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-400 transition duration-300">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 Trung Nguyên Kbuôr. All Rights Reserved.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Typed.js (Typing Effect) -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var options = {
+      strings: [
+        "Helping businesses scale their operations with cloud infrastructure",
+        "Providing solutions to containerized and modernized application",
+        "Discover my work and expertise in cloud computing, solutions consulting, and more..."
+      ],
+      typeSpeed: 25,  // Typing speed
+      backSpeed: 12,  // Backspacing speed
+      backDelay: 1000, // Time before starting to backspace
+      loop: true, // Loop the typing effect
+      shuffle: false, // No random order of strings
+      startDelay: 500, // Delay before typing starts
+    };
+    
+    var typed = new Typed(".typing", options);
+  </script>
+
+  <!-- JavaScript for Header Scroll Effect -->
+  <script>
+    const header = document.getElementById('header');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > window.innerHeight) {
+        header.classList.add('scrolled'); // Add 'scrolled' class when scrolling down
+      } else {
+        header.classList.remove('scrolled'); // Remove 'scrolled' class when scrolling up
+      }
+    });
+  </script>
+
+</body>
+</html>
