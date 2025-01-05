@@ -1,0 +1,68 @@
+/* Header tinh tế, không nền mà transparent */
+header {
+  background: transparent; /* Nền trong suốt khi ở trên hero */
+  padding: 1rem 2rem; /* Padding cho khoảng cách */
+  position: absolute; /* Đặt header lên trên ảnh nền hero */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50; /* Đảm bảo header luôn nằm trên ảnh nền */
+  transition: background 0.3s ease; /* Hiệu ứng mượt mà khi thay đổi nền */
+}
+
+header nav a {
+  color: white; /* Chữ màu trắng */
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #006936; /* Màu vàng khi hover */
+}
+
+header i {
+  font-size: 2rem; /* Kích thước icon */
+}
+
+/* Đảm bảo các icon ở bên phải */
+header nav.ml-auto {
+  margin-left: auto; /* Căn các icon sang bên phải */
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Chỉnh lại khoảng cách của các phần tử trong hero */
+#hero {
+  position: relative; /* Đảm bảo ảnh nền không bị che khuất bởi header */
+  z-index: 1;
+}
+
+/* Sử dụng font Orbitron cho các tiêu đề */
+h2, h3, h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Tăng khoảng cách chữ */
+}
+
+/* Thêm hiệu ứng cho chữ */
+.text-animate {
+  animation: fadeIn 2s ease-in-out; /* Hiệu ứng fadeIn */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Chỉ hiệu ứng gõ chữ */
+.typing {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}
