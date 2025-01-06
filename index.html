@@ -137,18 +137,39 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-white" data-aos="fade-up">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
-      <form action="mailto:your-email@example.com" method="POST" class="w-full max-w-lg mx-auto">
-        <input type="text" name="name" placeholder="Your Name" class="w-full p-4 mb-4 border rounded-lg" required>
-        <input type="email" name="email" placeholder="Your Email" class="w-full p-4 mb-4 border rounded-lg" required>
-        <textarea name="message" placeholder="Your Message" class="w-full p-4 mb-4 border rounded-lg" rows="4" required></textarea>
-        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-400 transition duration-300">Send Message</button>
-      </form>
-    </div>
-  </section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white" data-aos="fade-up">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+    <form id="contact-form" class="w-full max-w-lg mx-auto">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-4 mb-4 border rounded-lg" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-4 mb-4 border rounded-lg" required>
+      <textarea name="message" placeholder="Your Message" class="w-full p-4 mb-4 border rounded-lg" rows="4" required></textarea>
+      <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-400 transition duration-300">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Xử lý form submit bằng JavaScript
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Ngăn form gửi dữ liệu theo cách mặc định
+
+    // Lấy giá trị từ các trường nhập liệu
+    const name = document.querySelector('[name="name"]').value.trim();
+    const email = document.querySelector('[name="email"]').value.trim();
+    const message = document.querySelector('[name="message"]').value.trim();
+
+    // Tạo link mailto với nội dung từ form
+    const mailtoLink = `mailto:trungnguyen@kbuor.tech?subject=${encodeURIComponent("Message from " + name)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message)}`;
+
+    // Mở ứng dụng email client
+    window.location.href = mailtoLink;
+
+    // Hiển thị thông báo hoặc xử lý khác (tùy chọn)
+    alert("Opening your email client to send the message!");
+  });
+</script>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-6 text-center">
